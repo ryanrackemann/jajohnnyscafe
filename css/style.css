@@ -1,0 +1,97 @@
+:root {
+	--red: #bd1e10;
+	--gray: #919397;
+}
+html{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+body {
+	margin: 0;
+	background-color: var(--red);
+	color: white;
+	padding: 24px;
+}
+.grid {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.banner-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 16px 0;
+}
+img {
+	width: 100%;
+	max-width: 800px;
+	height: auto;
+}
+p, a {
+	font-family: 'Chonburi', cursive;
+	font-size: 22px;
+}
+p.small { font-size: 18px; }
+p.smaller { font-size: 16px; }
+p.big { font-size: 24px; }
+p.bigger {
+	font-size: 40px;
+	margin: 50px;
+}
+div.whitebox {
+	margin: 16px 0;
+	padding: 12px 16px;
+	background-color: white;
+	color: var(--red);
+	border-radius: 12px;
+}
+div.award p { font-family: 'Vast Shadow', cursive; }
+div.whiteborder {
+	margin: 16px 0;
+	padding: 12px 16px;
+	border: 3px solid white;
+	border-radius: 12px;
+}
+.grid-2 {	grid-column: 5 / span 2; }
+.grid-4 {	grid-column: 4 / span 4; }
+.grid-6 {	grid-column: 3 / span 6; }
+.grid-8 {	grid-column: 2 / span 8; }
+.grid-10 { grid-column: 1 / span 10; }
+.fb-btn {
+	display: block;
+	text-decoration: none;
+	background-color: #415e9b;
+	color: white;
+	padding: 16px;
+	font-size: 18px;
+	border-radius: 6px;
+}
+.fa {
+	margin-right: 12px;
+	font-size: 26px;
+	font-family: "Font Awesome 5 Brands";
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+	padding-bottom: 3px;
+}
+.fb-btn:hover {
+	background-color: white;
+	color: #415e9b;
+}
+@media only screen and (max-width: 800px) {
+	p.bigger {
+		font-size: 32px;
+		margin: 25px;
+	}
+	.grid-2, .grid-4, .grid-6, .grid-8, .grid-10 {
+		grid-column: 1 / span 10;
+  }
+}
