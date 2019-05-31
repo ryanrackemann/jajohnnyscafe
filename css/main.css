@@ -153,6 +153,22 @@ footer * {
   color: white;
   font-size: 16px;
 }
+.slider {
+  grid-column: 1 / span 2;
+}
+.slide {
+    position: relative;
+    left: -1000px;
+    -webkit-animation: slidein 0.25s forwards;
+    animation: slidein 0.25s forwards;
+}
+
+@-webkit-keyframes slidein {
+    100% { left: 0; }
+}
+@keyframes slidein {
+    100% { left: 0; }
+}
 
 /* Boxes start */
 

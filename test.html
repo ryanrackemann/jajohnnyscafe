@@ -8,15 +8,6 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/slide.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script><script src="sss/sss.min.js"></script><link rel="stylesheet" href="sss/sss.css" type="text/css" media="all">
-    <script>
-      jQuery(function($) {$('.slider').sss();});
-    </script>
-    <script type="text/javascript">
-      $('.slider').sss({
-  slideShow : true, // Set to false to prevent SSS from automatically animating.startOn : 0, // Slide to display first. Uses array notation (0 = first slide).transition : 400, // Length (in milliseconds) of the fade transition.speed : 3500, // Slideshow speed in milliseconds.showNav : true // Set to false to hide navigation arrows.
-  });
-    </script>
 	</head>
 	<body>
     <div class="page-wrap">
@@ -34,18 +25,55 @@
       <div class="content">
 
 
-
+<!--
         <div class="slider">
-          <div>
+          <div class="slide slidein">
             <img src="img/sandwich.jpg" alt>
-            <span class="caption">This one has a caption</span>
+            <span">Sandwich</span>
           </div>
-          <img src="img/meat-pizza.jpg" alt>
-          <img src="img/pazooki.jpg" alt>
-          <img src="img/quinoa-salad.jpg" alt>
-          <img src="img/veg-pizza.jpg" alt>
+          <div class="slide">
+            <img src="img/meat-pizza.jpg" alt>
+            <span>Meat Pizza</span>
+          </div>
+          <div class="slide">
+            <img src="img/pazooki.jpg" alt>
+            <span>Pazooki</span>
+          </div>
+          <div class="slide">
+            <img src="img/quinoa-salad.jpg" alt>
+            <span>Quinoa Salad</span>
+          </div>
+          <div class="slide">
+            <img src="img/veg-pizza.jpg" alt>
+            <span>Veggie Pizza</span>
+          </div>
+          <button onclick="plusDivs(-1)">&#10094;</button>
+          <button onclick="plusDivs(+1)">&#10095;</button>
         </div>
+        <script type="text/javascript">
+          /* NEEDS WORK */
+          /*
+          var slideIndex = 1;
+          showDivs(slideIndex);
 
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("slide");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length} ;
+            for (i = 0; i < x.length; i++) {
+              x[i].classList.add("slideout");
+              x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+          }
+          */
+        </script>
+-->
 				<div class="whiteborder center cursive">
 					<p class="big">TASTE OF PARKERS #1 FOOD 2019</p>
   			</div>
