@@ -1,39 +1,93 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>JA Johnny's Cafe</title>
-		<link href="https://fonts.googleapis.com/css?family=Vast+Shadow|Chonburi" rel="stylesheet">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="css/construction.css">
-	</head>
-	<body>
-		<div class="grid">
-		<div class="grid-6">
-			<div class="banner-img whitebox">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JA Johnny's Cafe</title>
+	<link href="https://fonts.googleapis.com/css?family=Vast+Shadow|Chonburi" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/slide.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body class="offwhite">
+	<div class="page-wrap">
+		<header>
+			<h1>JA Johnny's Cafe</h1>
+			<a href="/index.html" class="logo">
 				<img src="img/ja-banner.png" />
+			</a>
+			<nav class="cursive">
+				<ul>
+					<li><a href="menu.html">Menu</a></li>
+					<li><a href="hours.html">Hours</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="content">
+
+
+			<!-- SLIDER -->
+			<div class="slider">
+				<div class="slide fade">
+					<img src="img/sandwich.jpg" alt>
+				</div>
+				<div class="slide fade">
+					<img src="img/meat-pizza.jpg" alt>
+				</div>
+				<div class="slide fade">
+					<img src="img/pazooki.jpg" alt>
+				</div>
+				<div class="slide fade">
+					<img src="img/quinoa-salad.jpg" alt>
+				</div>
+				<div class="slide fade">
+					<img src="img/veg-pizza.jpg" alt>
+				</div>
 			</div>
-		</div>
-			<div class="grid-4">
-				<div class="whiteborder award">
+			<script type="text/javascript">
+				var slideIndex = 0;
+				showSlides();
+
+				function showSlides() {
+					var i;
+					var slides = document.getElementsByClassName("slide");
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					slideIndex++;
+					if (slideIndex > slides.length) {
+						slideIndex = 1
+					}
+					slides[slideIndex - 1].style.display = "block";
+					setTimeout(showSlides, 5000); // Change image every 2 seconds
+				}
+			</script>
+			<!-- END SLIDER -->
+			<article class="center">
+				<div class="gray left indent">
+					<h2>A note from the owner:</h2>
+					<p class="no-indent">Thank you for visiting J.A. Johnny's Caf&eacute;.</p>
+					<p>We are a very small neighborhood caf&eacute; that takes pride in fresh and tasty ingredients. Our goal is to serve you the freshest and best items on the Parker Strip.</p>
+					<p>Please keep in mind that this little place can draw a pretty awesome crowd at times. We aim to provide great food and fun for the entire family, and we do our best to do so in the timeliest manner possible.</p>
+					<p>At the busiest of times, this can run on "River Time," so please sit back and relax and enjoy yourselves. Your deserve it!</p>
+				</div>
+				<div class="redborder center cursive">
 					<p class="big">TASTE OF PARKERS #1 FOOD 2019</p>
 				</div>
-			</div>
-			<div class="grid-6">
-				<p>Thank you for staying tuned while we update our site!</p>
-			</div>
-			<div class="grid-4">
-				<div class="whiteborder">
-					<p class="small">9134 Riverside Dr.<br />
-						Parker AZ 85344<br />
-						(928) 667-5952</p>
-					<p class="smaller">One-mile North of Hwy. 95 on Riverside Dr. (Parker Strip)</p>
-				</div>
-			</div>
-			<div class="grid-2">
-				<a class="fb-btn" href="#"><i class="fa fa-facebook"></i>Visit us on Facebook</a>
-			</div>
+				<a class="fb-btn" href="https://www.facebook.com/JAjohnnyscafe/"><i class="fa fa-facebook"></i>Visit us on Facebook</a>
+			</article>
 		</div>
-	</body>
+		<footer class="red">
+			<address>
+				<p>9134 Riverside Dr.<br />Parker AZ 85344</p>
+			</address>
+			<div>
+				<a class="link" href="tel:+19286675952">(928) 667-5952</a>
+			</div>
+		</footer>
+	</div>
+</body>
+
 </html>

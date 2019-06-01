@@ -1,233 +1,343 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>JA Johnny's Cafe</title>
-		<link href="https://fonts.googleapis.com/css?family=Vast+Shadow|Chonburi" rel="stylesheet">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-    <style>
-      :root {
-      	--red: #bd1e10;
-      	--gray: #919397;
-        --pad: 16px;
-      }
-      * {
-        box-sizing: border-box;
-      }
-      html{
-      	margin: 0;
-      	padding: 0;
-      	height: 100%;
-      }
-      body {
-      	margin: 0;
-      	background-color: var(--red);
-      	color: white;
-      }
-      p, a {
-      	font-family: 'Chonburi', cursive;
-      	font-size: 22px;
-      }
-      p.small { font-size: 18px; }
-      p.smaller { font-size: 16px; }
-      p.big { font-size: 24px; }
-      p.bigger {
-      	font-size: 40px;
-      	margin: 50px;
-      }
-      img {
-      	width: 100%;
-      	max-width: 800px;
-      	height: auto;
-      }
-      .link {
-        text-decoration: none;
-      }
-      .link:hover {
-        text-decoration: underline;
-      }
-      .fb-btn {
-      	display: inline-flex;
-        align-items: center;
-      	text-decoration: none;
-      	background-color: #415e9b;
-      	color: white;
-      	padding: var(--pad);
-      	font-size: 18px;
-      	border-radius: 6px;
-        grid-column: 1 / span 2;
-      }
-      .fa {
-      	margin-right: 12px;
-      	font-size: 26px;
-      	font-family: "Font Awesome 5 Brands";
-      	-webkit-font-smoothing: antialiased;
-      	display: inline-block;
-      	font-style: normal;
-      	font-variant: normal;
-      	text-rendering: auto;
-      	line-height: 1;
-      	padding-bottom: 3px;
-      }
-      .fb-btn:hover {
-      	background-color: white;
-      	color: #415e9b;
-      }
-      .cursive * {
-        font-family: 'Vast Shadow', cursive;
-      }
-      .center {
-        text-align: center;
-      }
 
-      /* Site Header begin */
-      header {
-        grid-area: header;
-        text-align: center;
-        display: grid;
-        grid-gap: 24px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 'logo nav';
-        justify-items: center;
-        align-items: center;
-        width: 100%;
-        background-color: white;
-        color: var(--gray);
-        padding: var(--pad);
-      }
-      header > * {
-        width: 100%;
-      }
-      header .logo {
-        grid-area: logo;
-      }
-      header nav {
-        grid-area: nav;
-        border-top: 2px dashed var(--red);
-        border-bottom: 2px dashed var(--red);
-        padding: 10px 0;
-        width: 100%;
-      }
-      header nav ul {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-      header nav li {
-        display: inline-flex;
-      }
-      header a {
-        color: var(--gray);
-        text-decoration: none;
-        font-size: 28px;
-      }
-      header a:hover {
-        color: var(--red);
-        text-decoration: underline;
-      }
-      /* Site Header end */
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JA Johnny's Cafe</title>
+	<link href="https://fonts.googleapis.com/css?family=Vast+Shadow|Chonburi" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/slide.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+</head>
 
-      .page-wrap {
-        display: grid;
-        grid-template-rows: auto 1fr auto;
-        grid-template-areas: 'header' 'content' 'footer';
-        height: 100vh;
-        align-items: start;
-      }
+<body class="offwhite">
+	<div class="page-wrap">
+		<header>
+			<h1>JA Johnny's Cafe</h1>
+			<a href="/index.html" class="logo">
+				<img src="img/ja-banner.png" />
+			</a>
+			<nav class="cursive">
+				<ul>
+					<li><a href="menu.html">Menu</a></li>
+					<li><a href="hours.html">Hours</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="menu">
+			<div class="redborder">
+				<h2>Breakfast</h2>
+				<p>Served from when we open until 10:30 A.M.<br />(Omelettes, Griddles, Burritos, and more)</p>
+				<hr />
+				<h2>Grill and Fryer</h2>
+				<p>Starts at 11:00 A.M. until close</p>
+			</div>
+			<h2>Breakfast Burritos</h2>
+			<div class="submenu">
+				<div>
+					<h3>Chile Verde</h3>
+					<div class="price ribbon"><span>7.75</span></div>
+					<p class="descr">Chile Verde Packed with Pulled Pork, Eggs, Cheese, Potatoes</p>
+				</div>
+				<div>
+					<h3>Bacon, Egg, &amp; Cheese</h3>
+					<div class="price ribbon"><span>7.75</span></div>
+					<p class="descr">Scrambled Eggs, Cheese, Bacon, Potatoes</p>
+				</div>
+				<div>
+					<h3>Ham, Egg, &amp; Cheese</h3>
+					<div class="price ribbon"><span>7.75</span></div>
+					<p class="descr">Deli Ham Sliced Thin, Eggs, Cheese, Potatoes</p>
+				</div>
+			</div>
+			<h2>Salads</h2>
+			<div class="submenu">
+				<div class="no-badge">
+					<h3>Caesar Salad</h3>
+					<div class="price push-bottom">
+						Whole: <span>8.50</span>
+					</div>
+					<div class="price">
+						Half: <span>5.25</span>
+					</div>
+					<p class="descr">Chopped Romaine, Caesar, Parmesan, Croutons</p>
+					<div class="price">
+						Add Grilled Chicken: <span>3.00</span>
+					</div>
+				</div>
+				<div class="no-badge">
+					<h3>Garden Salad</h3>
+					<div class="price push-bottom">
+						Whole: <span>8.50</span>
+					</div>
+					<div class="price">
+						Half: <span>5.25</span>
+					</div>
+					<p class="descr">Chopped Romaine, Tomato, Cucumber, Onion, Shredded Mozzarella, Choice of Dressing</p>
+				</div>
+				<div>
+					<h3>Chef Salad</h3>
+					<div class="price ribbon"><span>10.75</span></div>
+					<p class="descr">Lettuce, Tomato, Onion, Turkey, Ham, Bacon, Shredded Jack and Cheddar Cheese, Bleu Cheese</p>
+				</div>
+				<div>
+					<h3>BBQ Chicken Salad</h3>
+					<div class="price ribbon"><span>10.75</span></div>
+					<p class="descr">Chopped Romaine, Grilled Chicken, Bacon, Tomato, Onion, Shredded Jack and Cheddar Cheese, BBQ Sauce, Ranch</p>
+				</div>
+			</div>
+			<h2>Other "Stuff"</h2>
+			<div class="submenu">
+				<div class="no-descr">
+					<h3>Fish and Chips</h3>
+					<div class="price ribbon"><span>9.75</span></div>
+				</div>
+				<div class="no-descr">
+					<h3>Quesadilla</h3>
+					<div class="price ribbon"><span>6.75</span></div>
+				</div>
+				<div class="no-descr">
+					<h3>Corn Dog</h3>
+					<div class="price ribbon"><span>5.25</span></div>
+				</div>
+				<div class="no-descr">
+					<h3>Hot Dog</h3>
+					<div class="price ribbon"><span>5.25</span></div>
+				</div>
+				<div class="no-descr">
+					<h3>Cup of Chile</h3>
+					<div class="price ribbon"><span>4.75</span></div>
+				</div>
+				<div>
+					<h3>Chile Size</h3>
+					<div class="price ribbon"><span>4.25</span></div>
+					<p class="descr">Add Chile, Cheese, and Onions to any item</p>
+				</div>
+			</div>
+			<h2>Burgers</h2>
+			<p>Served with Fresh Cut Fries</p>
+			<div class="submenu">
+				<div>
+					<h3>The Classic Angus Burger</h3>
+					<div class="price ribbon"><span>11.50</span></div>
+					<p class="descr">Lettuce, Tomato, Pickle, Onion, Thousand Island</p>
+				</div>
+				<div>
+					<h3>Chicken Burger</h3>
+					<div class="price ribbon"><span>11.50</span></div>
+					<p class="descr">Grilled Chicken Breast, Provolone, Lettuce, Tomato, Onion, Mayo</p>
+				</div>
+				<div>
+					<h3>Fish Burger</h3>
+					<div class="price ribbon"><span>11.50</span></div>
+					<p class="descr">Breaded Fish, Lettuce, Tomato, Mayo</p>
+				</div>
+				<div>
+					<h3>Veggie Burger</h3>
+					<div class="price ribbon"><span>11.50</span></div>
+					<p class="descr">Lettuce, Tomato, Onion, Tahini Sauce</p>
+				</div>
+			</div>
+			<h2>From the Grill</h2>
+			<p>Served with Fresh Cut Fries</p>
+			<div class="submenu">
+				<div>
+					<h3>Traditional Patty Melt</h3>
+					<div class="price ribbon"><span>11.50</span></div>
+					<p class="descr">Sourdough, American Cheese, Grilled Onion, Thousand Island</p>
+				</div>
+				<div>
+					<h3>Not a Reuben, Reuben</h3>
+					<div class="price ribbon"><span>11.50</span></div>
+					<p class="descr">Rye, Pastrami, Swiss Cheese, Sauerkraut, Mustard</p>
+				</div>
+				<div>
+					<h3>Grilled Pastrami</h3>
+					<div class="price ribbon"><span>11.50</span></div>
+					<p class="descr">Rye, Swiss Cheese, Pickles, Mustard</p>
+				</div>
+				<div>
+					<h3>J.A.'s Club</h3>
+					<div class="price ribbon"><span>11.50</span></div>
+					<p class="descr">Grilled Sourdough, Grilled Ham, Turkey, Bacon, Lettuce, Tomato, Mayo</p>
+				</div>
+				<div>
+					<h3>Grilled Turkey Sandwich</h3>
+					<div class="price ribbon"><span>11.50</span></div>
+					<p class="descr">Sourdough, Provolone, Sliced Turkey Breast, Mayo</p>
+				</div>
+			</div>
+			<h2>Sandwiches</h2>
+			<div class="submenu">
+				<div class="no-descr">
+					<h3>B.L.T.</h3>
+					<div class="price ribbon"><span>8.25</span></div>
+				</div>
+				<div>
+					<h3>Deli Sandwich</h3>
+					<div class="price ribbon"><span>9.75</span></div>
+					<p class="descr">Choice of Bread and Meat (Turkey, Ham, Pastrami)<br />Served with Lettuce, Tomato, Onion, Mayo, Mustard</p>
+				</div>
+				<div class="no-descr">
+					<h3>Chicken, Egg, or Tuna Salad</h3>
+					<div class="price ribbon"><span>8.75</span></div>
+				</div>
+			</div>
+			<h2>Appetizers</h2>
+			<div class="submenu">
+				<div class="no-descr">
+					<h3>Chicken Strips</h3>
+					<div class="price ribbon"><span>5.75</span></div>
+				</div>
+				<div class="no-descr">
+					<h3>Fried Zucchini Sticks</h3>
+					<div class="price ribbon"><span>5.25</span></div>
+				</div>
+				<div class="no-descr">
+					<h3>Stuffed Jalape&ntilde;os</h3>
+					<div class="price ribbon"><span>5.75</span></div>
+				</div>
+				<div class="no-descr">
+					<h3>Fried Pickles</h3>
+					<div class="price ribbon"><span>5.25</span></div>
+				</div>
+				<div class="no-descr">
+					<h3>Onion Rings</h3>
+					<div class="price ribbon"><span>5.75</span></div>
+				</div>
+			</div>
+			<h2>Potatoes</h2>
+			<div class="submenu">
+				<div>
+					<h3>Fresh Kennebec's (Seasonal)</h3>
+					<div class="price ribbon"><span>2.75</span></div>
+					<p class="descr">These are fresh cut fries and are great for dine&ndash;in</p>
+				</div>
+				<div class="no-descr">
+					<h3>Steak Cut French Fries</h3>
+					<div class="price ribbon"><span>3.50</span></div>
+				</div>
+				<div>
+					<h3>Chips</h3>
+					<div class="price ribbon"><span>3.25</span></div>
+					<p class="descr">Thin fried potato rounds</p>
+				</div>
+			</div>
+			<h2>Sweets &amp; Treats</h2>
+			<div class="submenu">
+				<div class="no-badge">
+					<h3>Gelato</h3>
+					<div class="price push-bottom">
+						Single Scoop: <span>3.50</span>
+					</div>
+					<div class="price">
+						Double Scoop: <span>5.75</span>
+					</div>
+					<ul class="descr">
+						<li>Chocolate/Chocolate</li>
+						<li>Sea Salt Caramel Truffle</li>
+					</ul>
+				</div>
+				<div class="no-descr">
+					<h3>Hand&ndash;Scooped Milk Shakes</h3>
+					<div class="price ribbon"><span>6.50</span></div>
+				</div>
+				<div class="no-descr">
+					<h3>Smoothies</h3>
+					<div class="price ribbon"><span>6.50</span></div>
+				</div>
+				<div class="no-descr">
+					<h3>Dessert Variety (Just Ask)</h3>
+					<div class="price ribbon no-dolla"><span>Varies</span></div>
+				</div>
+			</div>
+			<h2>Beverages</h2>
+			<div class="submenu">
+				<div class="no-descr">
+					<h3>Soda, Cold Brew Tea, Coffee</h3>
+					<div class="price ribbon"><span>2.50</span></div>
+				</div>
+				<div class="no-descr">
+					<h3>Cappuccino/Latte</h3>
+					<div class="price ribbon"><span>4.75</span></div>
+				</div>
+				<div class="no-badge">
+					<h3>Espresso</h3>
+					<div class="price"><span>2.25</span> / <span>3.50</span></div>
+				</div>
+				<div>
+					<h3>Libations</h3>
+					<p class="descr">Domestic and Imported Beers, Call, Premium and Top Shelf Spirits, Wine, &amp; Bubblies</p>
+				</div>
+			</div>
+			<h2>Pizzas (12" Thin Crust)</h2>
+			<p>After 6pm. Feel free to call your pizza in ahead of time</p>
+			<div class="submenu">
+				<div class="no-descr">
+					<h3>5 Cheese Pizza</h3>
+					<div class="price ribbon"><span>14.00</span></div>
+				</div>
+				<div class="no-descr">
+					<h3>Pepperoni Pizza</h3>
+					<div class="price ribbon"><span>15.50</span></div>
+				</div>
+				<div>
+					<h3>Margarita Pizza</h3>
+					<div class="price ribbon"><span>14.50</span></div>
+					<p class="descr">Olive Oil, Tomato, Garlic, Basil</p>
+				</div>
+				<div>
+					<h3>J.A.'s White Pizza</h3>
+					<div class="price ribbon"><span>15.00</span></div>
+					<p class="descr">Garlic, Basil, Mozzarella, Romano, Parmesan, Asiago<br />Cheese with a light cream sauce with a slight bite</p>
+				</div>
+				<div>
+					<h3>Veggie Pizza</h3>
+					<div class="price ribbon"><span>16.00</span></div>
+					<p class="descr">Bell Peppers, Onions, Tomato, Mushrooms, Olives</p>
+				</div>
+				<div>
+					<h3>Supreme Pizza</h3>
+					<div class="price ribbon"><span>17.00</span></div>
+					<p class="descr">Pepperoni, Sausage, Bell Peppers, Onions, Mushrooms</p>
+				</div>
+				<div>
+					<h3>Meat Lovers Pizza</h3>
+					<div class="price ribbon"><span>17.50</span></div>
+					<p class="descr">Pepperoni, Sausage, Ham, Pastrami, Bacon</p>
+				</div>
+				<div>
+					<h3>Hawaiian Pizza</h3>
+					<div class="price ribbon"><span>16.50</span></div>
+					<p class="descr">Ham, Pineapple</p>
+				</div>
+				<div>
+					<h3>Pastrami Pizza</h3>
+					<div class="price ribbon"><span>16.50</span></div>
+					<p class="descr">Pastrami, Peppercinis, Mustard</p>
+				</div>
+				<div class="no-descr">
+					<h3>Extra Topping (Non-Meat)</h3>
+					<div class="price ribbon"><span>1.25</span></div>
+				</div>
+				<div class="no-descr">
+					<h3>Extra Meat</h3>
+					<div class="price ribbon"><span>2.25</span></div>
+				</div>
+			</div>
+			<p class="disclaimer">All menu items are based on availability of ingredients and menu can alter at times. We use products that may contain nuts, egg, soy, and other allergens. Please let us know if you have <strong>ANY</strong> allergies and we will do our best to accommodate you. Please visit our <a href="https://www.facebook.com/JAjohnnyscafe/">Facebook page</a> and <a href="/">website</a> for updates. Thankk you for your patronage.</p>
+		</div>
+		<footer class="red">
+			<address>
+				<p>9134 Riverside Dr.<br />Parker AZ 85344</p>
+			</address>
+			<div>
+				<a class="link" href="tel:+19286675952">(928) 667-5952</a>
+			</div>
+		</footer>
+	</div>
+</body>
 
-      .content {
-        padding: var(--pad);
-        grid-area: content;
-        display: grid;
-        grid-gap: var(--pad);
-        justify-items: center;
-        align-items: start;
-      }
-
-      footer {
-        grid-area: footer;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: var(--gray);
-        padding: 0 var(--pad);
-        width: 100%;
-      }
-      footer * {
-        color: white;
-        font-size: 16px;
-      }
-
-      /* Boxes start */
-
-      div.whiteborder {
-        padding: var(--pad);
-      	border: 3px solid white;
-      	border-radius: 12px;
-      }
-
-      div.whitebox {
-        padding: var(--pad);
-      	background-color: white;
-      	color: var(--red);
-      	border-radius: 12px;
-      }
-
-      /* Boxes end */
-
-      @media only screen and (max-width: 600px) {
-      	p.bigger {
-      		font-size: 32px;
-      		margin: 25px;
-      	}
-        img {
-          max-width: 100%;
-        }
-        header {
-          width: 100%;
-          justify-content: center;
-          grid-template-areas: 'logo' 'nav';
-          grid-template-columns: 1fr;
-          grid-gap: 8px;
-        }
-        header nav li {
-          margin-right: 0;
-        }
-      }
-    </style>
-	</head>
-	<body>
-    <div class="page-wrap">
-      <header>
-        <a href="/" class="logo">
-    	     <img src="img/ja-banner.png" />
-        </a>
-        <nav class="cursive">
-          <ul>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="hours.html">Hours</a></li>
-          </ul>
-        </nav>
-      </header>
-      <div class="content">
-				<div class="whiteborder center cursive">
-					<p class="big">TASTE OF PARKERS #1 FOOD 2019</p>
-  			</div>
-  			<a class="fb-btn" href="#"><i class="fa fa-facebook"></i>Visit us on Facebook</a>
-  		</div>
-      <footer>
-        <address>
-          <p>9134 Riverside Dr.<br />Parker AZ 85344</p>
-        </address>
-        <div>
-          <a class="link" href="tel:+19286675952">(928) 667-5952</a>
-        </div>
-      </footer>
-    </div>
-	</body>
 </html>
