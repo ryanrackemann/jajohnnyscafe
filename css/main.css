@@ -169,7 +169,7 @@ header a:hover {
      grid-column: auto / span 1;
 }
 .prose {
-     padding: var(--space) var(--giganticspace);
+     padding: var(--space) var(--hugespace);
 }
 
 article {
@@ -267,6 +267,9 @@ div.whitebox {
           grid-gap: 16px;
           grid-template-columns: 1fr;
      }
+     .prose {
+          padding: var(--space) var(--giganticspace);
+     }
 }
 @media only screen and (max-width: 1200px) {
      header {
@@ -284,6 +287,11 @@ div.whitebox {
      }
      .prose {
           padding: var(--space) var(--hugespace);
+     }
+}
+@media only screen and (max-width: 800px) {
+     header {
+          padding: var(--space);
      }
 }
 @media only screen and (max-width: 600px) {

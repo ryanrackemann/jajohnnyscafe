@@ -40,7 +40,7 @@
      color: var(--darkgray);
      text-align: center;
 }
-.disclaimer, .disclaimer * {
+p.disclaimer, .disclaimer, .disclaimer * {
      font-size: 14px;
 }
 .submenu {
@@ -79,6 +79,7 @@
 .submenu > div .descr, .submenu > div .descr li {
      color: var(--darkgray);
      font-size: 16px;
+     text-align: left;
 }
 .submenu > div.no-descr { padding-bottom: var(--bigspace); }
 div.no-badge .price {

@@ -1,0 +1,19 @@
+.hours {
+     display: grid;
+     justify-content: center;
+     align-items: center;
+     grid-template-columns: repeat(2, 1fr);
+}
+
+.hours-day p, .hours-time p {
+     margin: 6px;
+}
+
+@media only screen and (max-width: 800px) {
+     .hours {
+          grid-template-columns: 1fr;
+          grid-template-areas: 'hours-day' 'hours-time';
+     }
+     .hours-day { padding-top: 12px; }
+     .hours-time { padding-bottom: 12px; }
+}
