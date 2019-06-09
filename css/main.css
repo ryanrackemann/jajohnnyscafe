@@ -300,6 +300,7 @@ div.whitebox {
     grid-template-areas: 'logo' 'nav';
     grid-template-columns: 1fr;
     grid-gap: 8px;
+    padding: var(--space);
   }
   header nav li {
     margin-right: 0;
