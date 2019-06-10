@@ -11,7 +11,7 @@
 .hours > * {
     border-bottom: 1px solid var(--red);
 }
-.hours > *:nth-of-type(3n+0) {
+.hours > *:nth-of-type(n-1) {
      border-bottom: none;
 }
 .hours > *:last-of-type {
