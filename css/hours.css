@@ -11,6 +11,9 @@
 .hours > * {
     border-bottom: 1px solid var(--red);
 }
+.hours > *:last-of-type {
+     border-bottom: none;    
+}
 
 @media only screen and (max-width: 800px) {
      .hours > * {
@@ -18,6 +21,9 @@
      }
      .hours-time {
           border-bottom: 1px solid var(--red);
+     }
+     .hours-time > *:last-of-type {
+          border-bottom: none;    
      }
      .hours {
           grid-template-columns: 1fr;
