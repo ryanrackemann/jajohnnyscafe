@@ -1,15 +1,24 @@
 .hours {
      display: grid;
      justify-content: center;
-     align-items: center;
+     align-items: baseline;
      grid-template-columns: repeat(2, 1fr);
 }
 
 .hours-day p, .hours-time p {
      margin: 6px;
 }
+.hours > * {
+    border-bottom: 1px solid var(--red);
+}
 
 @media only screen and (max-width: 800px) {
+     .hours > * {
+         border-bottom: none;
+     }
+     .hours-time {
+          border-bottom: 1px solid var(--red);
+     }
      .hours {
           grid-template-columns: 1fr;
           grid-template-areas: 'hours-day' 'hours-time';
