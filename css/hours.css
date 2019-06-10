@@ -11,11 +11,8 @@
 .hours > * {
     border-bottom: 1px solid var(--red);
 }
-.hours > *:nth-of-type(n-1) {
+.hours > *:nth-child(5), .hours > *:nth-child(6) {
      border-bottom: none;
-}
-.hours > *:last-of-type {
-     border-bottom: none;    
 }
 
 @media only screen and (max-width: 800px) {
