@@ -11,7 +11,7 @@
 .hours > * {
     border-bottom: 1px solid var(--red);
 }
-.hours > *nth-last-child(1), .hours > *nth-last-child(2) {
+.hours > *:nth-last-child(1), .hours > *:nth-last-child(2) {
      border-bottom: none;
 }
 
