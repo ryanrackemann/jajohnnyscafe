@@ -3,6 +3,7 @@
   --gray: #919397;
   --darkgray: #4c4c4c;
   --offwhite: #fbf3e8;
+  --littlespace: 8px;
   --space: 16px;
   --bigspace: 32px;
   --hugespace: 100px;
@@ -95,8 +96,12 @@ p.bigger {
 .center { text-align: center; }
 .left { text-align: left; }
 .right { text-align: right; }
-.push-bottom { margin-bottom: var(--space); }
-.pad-bottom { padding-bottom: var(--bigspace); }
+.flush-bottom, div.flush-bottom, div.redborder .flush-bottom { margin-bottom: 0; }
+.push-bottom, div.push-bottom, div.redborder .push-bottom { margin-bottom: var(--space); }
+.pad-bottom, div.pad-bottom, div.redborder .pad-bottom { padding-bottom: var(--bigspace); }
+.margin-top, div.margin-top, div.redborder .margin-top { margin-top: var(--bigspace); }
+.smallpad, div.smallpad, div.redborder .smallpad { padding: var(--littlespace); }
+
 
 /* Site Header begin */
 header {
@@ -292,6 +297,12 @@ div.whitebox {
 @media only screen and (max-width: 800px) {
      header {
           padding: var(--space);
+     }
+     .m-no-margin, div.m-no-margin, div.redborder .m-no-margin {
+       margin: 0;
+     }
+     .m-margin-top, div.m-margin-top, div.redborder .m-margin-top {
+       margin-top: var(--space);
      }
 }
 @media only screen and (max-width: 600px) {
