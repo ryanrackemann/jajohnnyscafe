@@ -4,7 +4,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>JA Johnny's Cafe</title>
+	<meta name="description" content="Welcome to J.A. Johnny's Caf&eacute;! We are a very small neighborhood caf&eacute; that takes pride in fresh and tasty ingredients.">
+	<title>J.A. Johnny's Caf&eacute;</title>
 	<link href="https://fonts.googleapis.com/css?family=Vast+Shadow|Chonburi" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/slide.css">
@@ -14,9 +15,9 @@
 <body class="offwhite">
 	<div class="page-wrap">
 		<header>
-			<h1>JA Johnny's Cafe</h1>
+			<h1>JA Johnny's Caf&eacute;</h1>
 			<a href="/index.html" class="logo">
-				<img src="img/ja-banner.png" />
+				<img src="img/ja-banner.png" alt />
 			</a>
 			<nav class="cursive">
 				<ul>
@@ -88,6 +89,34 @@
 			</div>
 		</footer>
 	</div>
+	
+	<script type="application/ld+json">
+	{
+		"@context" : "http://schema.org",
+		"@type" : "Restaurant",
+		"name" : "JA Johnny's Caf&eacute;",
+		"url" : "https://www.jajohnnyscafe.com/",
+		"telephone": "(928) 667-5952"
+		"sameAs" : [
+			"https://www.facebook.com/JAjohnnyscafe/",
+			"https://www.yelp.com/biz/ja-johnnys-cafe-parker-2", 
+			"https://www.instagram.com/jajohnnyscafe/?hl=en"
+		],
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Parker",
+			"addressRegion": "AZ",
+			"postalCode": "85344",
+			"streetAddress": "9134 Riverside Dr",
+			"addressCountry": "US"
+		},
+		"aggregateRating": {
+			"@type": "AggregateRating",
+			"ratingValue": "4.7",
+			"reviewCount": "70"
+		}
+	}
+	</script>
 </body>
 
 </html>
