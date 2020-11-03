@@ -179,7 +179,7 @@ header a:hover {
 
 article {
      grid-column: 1 / span 1;
-     grid-row: 1 / span 1;
+     grid-row: 2 / span 1;
 }
 
 footer {
@@ -223,12 +223,22 @@ div.whitebox {
 /* Boxes end */
 
 /***************************
+
+***************************/
+.notification {
+  grid-column: 1 / span 2;
+  grid-row: auto / span 1;
+  max-width: 800px;
+  width: 100%;
+}
+
+/***************************
      SLIDER START
 ***************************/
 .slider {
-     grid-column: 2 / span 1;
-     grid-row: 1 / span 1;
-     max-width: 800px;
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  max-width: 800px;
 }
 .slides {
   max-width: 1000px;
@@ -268,6 +278,18 @@ div.whitebox {
 
 
 @media only screen and (max-width: 1600px) {
+    .grid-two-column {
+         display: grid;
+         grid-gap: var(--hugespace);
+         grid-template-columns: 1fr;
+         align-items: center;
+    }
+    .notification {
+      grid-column: 1 / span 1;
+      grid-row: auto / span 1;
+      max-width: 800px;
+      width: 100%;
+    }
      .grid-two-column.collapse-early {
           grid-gap: 16px;
           grid-template-columns: 1fr;
@@ -277,17 +299,25 @@ div.whitebox {
      }
 }
 @media only screen and (max-width: 1200px) {
+    .notification {
+      grid-column: 1 / span 1;
+      grid-row: auto / span 1;
+      max-width: 800px;
+      width: 100%;
+    }
      header {
        grid-template-columns: repeat(2, 1fr);
      }
      .content {
           grid-gap: var(--space);
      }
-     .slider, article {
-          grid-column: auto / span 2;
-          grid-row: auto / span 1;
+     article {
+          grid-column: auto / span 1;
+          grid-row: 3 / span 1;
      }
      .slider {
+          grid-column: auto / span 1;
+          grid-row: 2 / span 1;
           max-width: 500px;
      }
      .prose {
