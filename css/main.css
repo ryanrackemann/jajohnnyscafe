@@ -47,7 +47,7 @@ hr {
 }
 p, a, li {
   font-family: 'Chonburi', cursive;
-  font-size: 22px;
+  font-size: 18px;
 }
 p.gray, .gray p { color: var(--darkgray); }
 p.small { font-size: 18px; }
