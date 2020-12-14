@@ -232,7 +232,7 @@ div.whitebox {
   width: 100%;
 }
 .notification p {
-  color: var(--gray);
+  color: var(--darkgray);
   font-size: 18px;
 }
 .notification h3 {
