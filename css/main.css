@@ -234,7 +234,8 @@ header a:hover {
      display: grid;
      grid-gap: var(--space);
      grid-template-columns: repeat(2, 1fr);
-     align-items: center;
+     align-items: baseline;
+     align-content: center;
 }
 .one-column {
      grid-column: auto / span 1;
@@ -243,7 +244,7 @@ header a:hover {
   grid-column: auto / span 2;
 }
 .prose {
-     padding: var(--space) var(--hugespace);
+     padding: var(--bigspace);
 }
 
 article {
@@ -328,9 +329,6 @@ div.whitebox {
           grid-gap: 16px;
           grid-template-columns: 1fr;
      }
-     .prose {
-          padding: var(--space) var(--giganticspace);
-     }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -344,9 +342,6 @@ div.whitebox {
      }
      .award {
          grid-row: 4 / span 1;
-     }
-     .prose {
-          padding: var(--space) var(--hugespace);
      }
 }
 @media only screen and (max-width: 800px) {
