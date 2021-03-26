@@ -342,19 +342,6 @@ div.whitebox {
      header {
        grid-template-columns: repeat(2, 1fr);
      }
-     .content {
-          grid-template-columns: 1fr;
-          grid-template-rows: auto minmax(400px, 1fr) auto auto;
-     }
-     .grid-carousel {
-          grid-column: auto / span 1;
-          grid-row: 2 / span 1;
-     }
-     article {
-          grid-column: auto / span 1;
-          grid-row: 3 / span 1;
-     }
-
      .award {
          grid-row: 4 / span 1;
      }
@@ -396,6 +383,18 @@ div.whitebox {
      }
      .social-btn {
        opacity: 1;
+     }
+     .content {
+          grid-template-columns: 1fr;
+          grid-template-rows: auto minmax(400px, 1fr) auto auto;
+     }
+     .grid-carousel {
+          grid-column: auto / span 1;
+          grid-row: 2 / span 1;
+     }
+     article {
+          grid-column: auto / span 1;
+          grid-row: 3 / span 1;
      }
 }
 @media only screen and (max-width: 600px) {
