@@ -94,7 +94,7 @@ p.bigger {
   padding-bottom: 40px;
 }
 .main-carousel {
-  height: auto;
+  height: 100%;
   width: 100%;
 }
 .carousel-cell {
