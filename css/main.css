@@ -374,6 +374,9 @@ div.whitebox {
         grid-template-columns: 1fr;
         grid-template-rows: auto minmax(400px, 1fr) auto auto;
      }
+     .prose {
+       padding: 0 var(--bigspace) var(--bigspace) var(--bigspace);
+     }
      footer {
        display: grid;
        grid-template-rows: auto;
