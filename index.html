@@ -6,10 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Welcome to J.A. Johnny's Caf&eacute;! We are a very small neighborhood caf&eacute; that takes pride in fresh and tasty ingredients.">
 	<title>J.A. Johnny's Caf&eacute;</title>
-	<link href="https://fonts.googleapis.com/css?family=Vast+Shadow|Chonburi" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Vast+Shadow|Chonburi" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/slide.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="css/flickity.min.css" media="screen">
+	<script src="css/flickity.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147690927-1"></script>
 	<script>
@@ -38,66 +42,57 @@
 		<div class="content">
 
 			<!-- SLIDER -->
-			<div class="slider">
-				<div class="slide fade">
-					<img src="img/sandwich.jpg" alt>
-				</div>
-				<div class="slide fade">
-					<img src="img/meat-pizza.jpg" alt>
-				</div>
-				<div class="slide fade">
-					<img src="img/pazooki.jpg" alt>
-				</div>
-				<div class="slide fade">
-					<img src="img/quinoa-salad.jpg" alt>
-				</div>
-				<div class="slide fade">
-					<img src="img/veg-pizza.jpg" alt>
+			<div class="grid-carousel">
+				<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+					<div class="carousel-cell">
+						<img src="img/sandwich.jpg" alt>
+					</div>
+					<div class="carousel-cell">
+						<img src="img/meat-pizza.jpg" alt>
+					</div>
+					<div class="carousel-cell">
+						<img src="img/pazooki.jpg" alt>
+					</div>
+					<div class="carousel-cell">
+						<img src="img/quinoa-salad.jpg" alt>
+					</div>
+					<div class="carousel-cell">
+						<img src="img/veg-pizza.jpg" alt>
+					</div>
 				</div>
 			</div>
-			<script type="text/javascript">
-				var slideIndex = 0;
-				showSlides();
 
-				function showSlides() {
-					var i;
-					var slides = document.getElementsByClassName("slide");
-					for (i = 0; i < slides.length; i++) {
-						slides[i].style.display = "none";
-					}
-					slideIndex++;
-					if (slideIndex > slides.length) {
-						slideIndex = 1
-					}
-					slides[slideIndex - 1].style.display = "block";
-					setTimeout(showSlides, 5000); // Change image every 2 seconds
-				}
-			</script>
 			<!-- END SLIDER -->
 			<article class="center">
-				<div class="gray left indent">
+				<div class="gray left">
 					<h2>A note from the owner:</h2>
 					<p class="no-indent">Thank you for visiting J.A. Johnny's Caf&eacute;.</p>
 					<p>We are a very small neighborhood caf&eacute; that takes pride in fresh and tasty ingredients. Our goal is to serve you the freshest and best items on the Parker Strip.</p>
 					<p>Please keep in mind that this little place can draw a pretty awesome crowd at times. We aim to provide great food and fun for the entire family, and we do our best to do so in the timeliest manner possible.</p>
 					<p>At the busiest of times, this can run on "River Time," so please sit back and relax and enjoy yourselves. You deserve it!</p>
 				</div>
-				<div class="redborder center cursive">
-					<p class="big">TASTE OF PARKERS #1 FOOD 2019</p>
-				</div>
-				<a class="fb-btn" href="https://www.facebook.com/JAjohnnyscafe/"><i class="fa fa-facebook"></i>Visit us on Facebook</a>
 			</article>
+
+			<div class="award redborder center cursive">
+				<p class="big">TASTE OF PARKERS #1 FOOD 2019</p>
+			</div>
 		</div>
 		<footer class="red">
 			<address>
 				<p>9134 Riverside Dr.<br />Parker AZ 85344</p>
 			</address>
 			<div>
+			<a class="social-btn" href="https://www.instagram.com/jajohnnyscafe/" title="J.A. Johnny's Instagram"><i class="fa fa-instagram"></i></a>
+				<a class="social-btn" href="https://www.facebook.com/JAjohnnyscafe/" title="J.A. Johnny's Facebook"><i class="fa fa-facebook"></i></a>
+				<a class="social-btn" href="https://g.page/JAJohnnysCafe" title="J.A. Johnny's Google"><i class="fa fa-google"></i></a>
+				<a class="social-btn" href="https://www.yelp.com/biz/ja-johnnys-cafe-parker-2" title="J.A. Johnny's Yelp"><i class="fa fa-yelp"></i></a>
+			</div>
+			<div>
 				<a class="link" href="tel:+19286675952">(928) 667-5952</a>
 			</div>
 		</footer>
 	</div>
-	
+
 	<script type="application/ld+json">
 	{
 	  "@context" : "http://schema.org",
@@ -107,7 +102,7 @@
 	  "telephone": "(928) 667-5952",
 	  "sameAs" : [
 	    "https://www.facebook.com/JAjohnnyscafe/",
-	    "https://www.yelp.com/biz/ja-johnnys-cafe-parker-2", 
+	    "https://www.yelp.com/biz/ja-johnnys-cafe-parker-2",
 	    "https://www.instagram.com/jajohnnyscafe/?hl=en"
 	  ],
 	  "address": {
