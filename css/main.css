@@ -348,6 +348,10 @@ div.whitebox {
      header {
           padding: var(--space);
      }
+     header a {
+       font-size: 24px;
+       opacity: 1;
+     }
      h1 {
        font-size: 28px;
      }
@@ -362,26 +366,19 @@ div.whitebox {
      }
      .social-btn {
        margin: 0px 6px;
+       opacity: 1;
      }
      .content {
-       grid-gap: unset;
+        grid-gap: unset;
+        padding: 0 var(--bigspace) var(--bigspace) var(--bigspace);
+        grid-template-columns: 1fr;
+        grid-template-rows: auto minmax(400px, 1fr) auto auto;
      }
      footer {
        display: grid;
        grid-template-rows: auto;
        text-align: center;
        grid-gap: 12px;
-     }
-     header a {
-       font-size: 24px;
-       opacity: 1;
-     }
-     .social-btn {
-       opacity: 1;
-     }
-     .content {
-          grid-template-columns: 1fr;
-          grid-template-rows: auto minmax(400px, 1fr) auto auto;
      }
      .grid-carousel {
           grid-column: auto / span 1;
