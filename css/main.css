@@ -92,6 +92,7 @@ p.bigger {
   width: 100%;
   vertical-align: middle;
   padding-bottom: 40px;
+  max-width: 600px;
 }
 .main-carousel {
   height: 100%;
@@ -99,16 +100,14 @@ p.bigger {
 }
 .carousel-cell {
   width: 100%;
-  margin-right: 10px;
-  border-radius: 5px;
 }
 .carousel-cell > img {
-  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
-.carousel-cell.size-180 { width: 180px; }
-.carousel-cell.size-large { width: 75%; }
 .flickity-viewport {
   height: 100% !important;
+  border-radius: 5px;
 }
 
 /*******************************\
@@ -223,6 +222,7 @@ header a:hover {
   grid-area: content;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto minmax(400px, 1fr) auto auto;
   justify-content: space-evenly;
   justify-items: center;
   padding: var(--bigspace);
@@ -299,9 +299,6 @@ div.whitebox {
 
 /* Boxes end */
 
-/***************************
-
-***************************/
 .notification {
   grid-column: 1 / span 2;
   grid-row: auto / span 1;
@@ -347,11 +344,11 @@ div.whitebox {
      }
      .content {
           grid-template-columns: 1fr;
+          grid-template-rows: auto minmax(400px, 1fr) auto auto;
      }
      .grid-carousel {
           grid-column: auto / span 1;
           grid-row: 2 / span 1;
-          max-width: 500px;
      }
      article {
           grid-column: auto / span 1;
