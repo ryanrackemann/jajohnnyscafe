@@ -420,4 +420,7 @@ div.whitebox {
   .prose {
        padding: var(--space);
   }
+  .content {
+    grid-template-rows: auto minmax(280px, 1fr) auto auto;
+  }
 }
