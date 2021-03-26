@@ -7,7 +7,7 @@
      position: relative;
      background-color: var(--red);
      padding: var(--space) var(--bigspace);
-     color: var(--offwhite);
+     color: var(--white);
 }
 .menu > h2::after {
      content: " ";
@@ -16,7 +16,7 @@
      height: 0;
      border-top: 29.5px solid transparent; /* Go big on the size, and let overflow hide */
      border-bottom: 29.5px solid transparent;
-     border-left: 8px solid var(--offwhite);
+     border-left: 8px solid var(--white);
      position: absolute;
      top: 50%;
      margin-top: -29.5px;
@@ -29,7 +29,7 @@
      height: 0;
      border-top: 29.5px solid transparent; /* Go big on the size, and let overflow hide */
      border-bottom: 29.5px solid transparent;
-     border-right: 8px solid var(--offwhite);
+     border-right: 8px solid var(--white);
      position: absolute;
      top: 50%;
      margin-top: -29.5px;
@@ -86,7 +86,7 @@ div.no-badge .price {
      width: fit-content;
      background-color: transparent;
      background-color: var(--red);
-     color: var(--offwhite);
+     color: var(--white);
      padding: 8px 12px;
      border-radius: 12px;
      font-weight: bold;
@@ -111,7 +111,7 @@ div.no-badge .price {
   width: 225px;
   padding: var(--space) 0;
   background-color: var(--red);
-  color: var(--offwhite);
+  color: var(--white);
   font-size: 18px;
   text-align: center;
   font-weight: bold;
@@ -159,7 +159,7 @@ div.no-badge .price {
           height: auto;
           position: initial;
           background-color: var(--red);
-          color: var(--offwhite);
+          color: var(--white);
           border-radius: 12px;
      }
      .ribbon::before, .ribbon::after {
