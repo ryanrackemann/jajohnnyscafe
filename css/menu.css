@@ -8,6 +8,7 @@
      background-color: var(--red);
      padding: var(--space) var(--bigspace);
      color: var(--white);
+     width: 100%;
 }
 .menu > h2::after {
      content: " ";
