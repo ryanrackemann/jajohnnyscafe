@@ -19,8 +19,10 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="css/modal.css">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147690927-1"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
@@ -32,6 +34,14 @@
 
 <body class="offwhite">
 	<div class="page-wrap">
+		<div id="alert-modal" class="modal show">
+		  <!-- Modal content -->
+		  <div class="modal-content">
+		    <span id="close-alert-modal" class="close">&times;</span>
+				<h2>Temporary Hours</h2>
+		    <p>Due to mechanical issues, we will be opening at 5 PM today (6/25)</p>
+		  </div>
+		</div>
 		<header>
 			<a href="/index.html" class="logo">
 				<img src="img/ja-banner-transparent.png" />
@@ -357,6 +367,7 @@
 				<a class="link" href="tel:+19286675952">(928) 667-5952</a>
 			</div>
 		</footer>
+		<script src="js/modal.js"></script>
 	</div>
 </body>
 
