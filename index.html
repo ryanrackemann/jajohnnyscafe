@@ -19,6 +19,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Vast+Shadow&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/modal.css">
 	<link rel="stylesheet" href="css/flickity.min.css" media="screen">
 	<script src="css/flickity.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -35,6 +36,18 @@
 
 <body class="offwhite">
 	<div class="page-wrap">
+		<div id="alert-modal" class="modal show">
+
+		  <!-- Modal content -->
+		  <div class="modal-content">
+		    <span id="close-alert-modal" class="close">&times;</span>
+				<h2>Temporary Hours</h2>
+		    <p>Due to mechanical issues, we will be opening at 5 PM today (6/25)</p>
+		  </div>
+
+		</div>
+		<script src="js/modal.js"></script>
+
 		<header>
 			<a href="/index.html" class="logo">
 				<img src="img/ja-banner-transparent.png" alt />
