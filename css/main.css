@@ -314,25 +314,25 @@ div.whitebox {
 }
 
 /* Modal table css */
-.alert-modal table {
-  color: #333;
+.alert-modal modal-content table {
+  color: var(--darkgray);
   background: white;
   border: 1px solid var(--red);
   font-size: 12pt;
   border-collapse: collapse;
 }
-.alert-modal table thead th,
-.alert-modal table tfoot th {
-  color: #777;
+.alert-modal modal-content table thead th,
+.alert-modal modal-content table tfoot th {
+  color: var(--red);
   background: rgba(0,0,0,.1);
 }
-.alert-modal table caption {
+.alert-modal modal-content table caption {
   padding:.5em;
 }
-.alert-modal table th,
-.alert-modal table td {
+.alert-modal modal-content table th,
+.alert-modal modal-content table td {
   padding: .5em;
-  border: 1px solid var(--gray);
+  border: 1px solid var(--darkgray);
 }
 
 @media only screen and (max-width: 1600px) {
