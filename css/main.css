@@ -320,6 +320,8 @@ div.whitebox {
   border: 1px solid var(--red);
   font-size: 12pt;
   border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
 }
 .alert-modal modal-content table thead th,
 .alert-modal modal-content table tfoot th {
