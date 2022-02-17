@@ -314,7 +314,7 @@ div.whitebox {
 }
 
 /* Modal table css */
-.alert-modal modal-content table {
+.modal-content table {
   color: var(--darkgray);
   background: white;
   border: 1px solid var(--red);
@@ -323,16 +323,16 @@ div.whitebox {
   margin-left: auto;
   margin-right: auto;
 }
-.alert-modal modal-content table thead th,
-.alert-modal modal-content table tfoot th {
+.modal-content table thead th,
+.modal-content table tfoot th {
   color: var(--red);
   background: rgba(0,0,0,.1);
 }
-.alert-modal modal-content table caption {
+.modal-content table caption {
   padding:.5em;
 }
-.alert-modal modal-content table th,
-.alert-modal modal-content table td {
+.modal-content table th,
+.modal-content table td {
   padding: .5em;
   border: 1px solid var(--darkgray);
 }
