@@ -313,6 +313,30 @@ div.whitebox {
   font-size: 22px;
 }
 
+/* Modal table css */
+.modal-content table {
+  color: var(--darkgray);
+  background: white;
+  border: 1px solid var(--red);
+  font-size: 12pt;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal-content table thead th,
+.modal-content table tfoot th {
+  color: var(--red);
+  background: rgba(0,0,0,.1);
+}
+.modal-content table caption {
+  padding:.5em;
+}
+.modal-content table th,
+.modal-content table td {
+  padding: .5em;
+  border: 1px solid var(--darkgray);
+}
+
 @media only screen and (max-width: 1600px) {
     .grid-two-column {
          display: grid;
