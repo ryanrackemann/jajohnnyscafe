@@ -1,4 +1,5 @@
 :root {
+  --lightred: #F2D6D4;
   --red: #bd1e10;
   --gray: #919397;
   --darkgray: #4c4c4c;
@@ -296,6 +297,17 @@ div.whitebox {
   background-color: white;
   color: var(--red);
   border-radius: 12px;
+}
+
+div.redbox {
+  background-color: var(--lightred);
+  background-color: var(--red);
+  color: white;
+  border-radius: 12px;
+}
+
+div.redbox h2 {
+  color:white;
 }
 
 /* Boxes end */
