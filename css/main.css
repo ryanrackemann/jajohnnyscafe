@@ -234,7 +234,7 @@ header a:hover {
 .grid-two-column {
      display: grid;
      grid-gap: var(--space);
-     grid-template-columns: repeat(2, 1fr);
+     grid-template-columns: 1fr 1fr;
      align-items: baseline;
      align-content: center;
 }
@@ -352,7 +352,7 @@ table.temp-hours td {
 @media only screen and (max-width: 1600px) {
     .grid-two-column {
          display: grid;
-         grid-template-columns: 1fr;
+     grid-template-columns: 1fr 1fr;
          align-items: center;
     }
     .notification {
@@ -363,7 +363,7 @@ table.temp-hours td {
      .grid-two-column.collapse-early {
           grid-row: auto / span 1;
           grid-gap: 16px;
-          grid-template-columns: 1fr;
+          grid-template-columns: 1fr 1fr;
      }
 }
 
